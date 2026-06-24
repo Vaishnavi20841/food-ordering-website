@@ -1,0 +1,67 @@
+ export const topMeals=[
+{
+    image:"https://media.istockphoto.com/id/153784617/photo/supreme-pizza-slice-lift.jpg?s=612x612&w=0&k=20&c=Et5uDUJYv3sqDitb1jnUbnGrxhn015foBX_BS-1NFxs=",
+    title:"Pizza",
+ },
+{
+    image:"https://media.istockphoto.com/id/2148672887/photo/beef-patty-burger-with-vegetables-and-lettuce-on-white-background-file-contains-clipping-path.jpg?s=612x612&w=0&k=20&c=9HnGNZAv4PEvexEE6J4KIBNJFP_jK_qJ69fHt_sV7jU=",
+   title:"Burger", 
+},
+{
+    image:"https://media.istockphoto.com/id/1397193477/photo/club-sandwich-made-with-bacon-ham-turkey-cheese-lettuce-and-tomato.jpg?s=2048x2048&w=is&k=20&c=PvhEp6YkBIyJ_IM4annLqYGRLaHWMEt5aiGyM9AZ290=",
+    title:"Sandwich",
+},
+{
+    image:"https://media.istockphoto.com/id/926663774/photo/pad-thai-vegetarian-vegetables-udon-noodles-in-a-dark-background-top-view-vegetarian-food-in.jpg?s=612x612&w=0&k=20&c=OYjE5_Z9_ZCpG0yNW9aVfVFp7l9n2AquesjHJWyZOq0=",
+    title:"Noodles",
+},
+{
+    image:"https://media.istockphoto.com/id/1400256468/photo/mix-vegetable-kathi-roll.jpg?s=2048x2048&w=is&k=20&c=HUzw1YjJmeSEJDx82ShvEFnE0ClDTjIk3UQ2ctlGxZU=",
+    title:"Rolls",
+},
+{
+    image:"https://media.istockphoto.com/id/1341533237/photo/closeup-shot-of-manchurian-balls-in-bowl.jpg?s=612x612&w=0&k=20&c=VoghVeL5q9Y7Ju4IIFtLUXZIjPCAhHsI6-MaTqs_qFI=",
+    title:"Manchurian",
+},
+{
+    image:"https://media.istockphoto.com/id/480462346/photo/baked-chicken-legs-with-mushrooms-and-vegetables-horizontal-top.jpg?s=612x612&w=0&k=20&c=uY3Av_LKWvQhrKTnIi1ayw75rto1SFtRclFRYxY8F6w=",
+    title:"Chiken",
+},
+{
+    image:"https://media.istockphoto.com/id/155433174/photo/bolognese-pens.jpg?s=612x612&w=0&k=20&c=A_TBqOAzcOkKbeVv8qSDs0bukfAedhkA458JEFolo_M=",
+    title:"pasta",
+},
+{
+    image:"https://media.istockphoto.com/id/534053642/photo/donuts-in-multicolored-glaze-close-up.jpg?s=2048x2048&w=is&k=20&c=egtDM47QWCGXH2Po8jZDoAZV8iIu25EVvKEU-HnnOg0=",
+    title:"Donuts",
+},
+{
+    image:"https://media.istockphoto.com/id/1363081253/photo/asian-fried-rice-with-mushroom-and-vegetables-directly-above-photo.jpg?s=612x612&w=0&k=20&c=4Mz6TI3hdky2vX58QZooAe1Bo5hplDzHnZr9Trxvk20=",
+    title:"Fried Rice",
+},
+{
+    image:"https://media.istockphoto.com/id/1676097087/photo/pastel-de-tres-leches-three-milk-cake-latin-america-bakery-with-strawberries.jpg?s=2048x2048&w=is&k=20&c=3HJQGzEw0qNoFoT8lN9B97I0Soi3Y6pxYmRmujps2jk=",
+    title:"Cake",
+},
+{
+    image:"https://media.istockphoto.com/id/1363306527/photo/veg-biryani.jpg?s=2048x2048&w=is&k=20&c=binLDCRx48YyBJTxw4EMsKGofte_aEV_x6jEfLOetws=",
+    title:"veg Biryani",
+},
+{
+    image:"https://media.istockphoto.com/id/1156896083/photo/cheese-masala-dosa-recipe-with-sambar-and-chutney-selective-focus.jpg?s=612x612&w=0&k=20&c=Wyy0uUGXfQn7JstC8w0DsxWJVGnqWUJUCG53a42UH9s=",
+    title:"Dosa",
+},
+{
+    image:"https://media.istockphoto.com/id/1345624336/photo/chicken-biriyani.jpg?s=612x612&w=0&k=20&c=adU_N0P-1SKMQLZu5yu7aPknfLLgbViI8XILqLP92A4=",
+    title:"Biryani",
+},
+{
+    image:"https://media.istockphoto.com/id/1292564353/photo/assorted-indian-food-on-wooden-background-paneer-tikka-dal-tadka-jeera-rice-roti-dishes-and.jpg?s=612x612&w=0&k=20&c=zPg4tE9Wt5f59UbTYyuf8IhEf4uw4YziC4BjILWgurs=",
+    title:"North Indian Food",
+},
+{
+    image:"https://media.istockphoto.com/id/1158605924/photo/indian-hindu-veg-thali-food-platter-selective-focus.jpg?s=1024x1024&w=is&k=20&c=P9u-LuKexn-6xHZrn6HVlQKbLDH-oejl6wrkmL2cP30=",
+    title:"Thali",
+},
+
+];
