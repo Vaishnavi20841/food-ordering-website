@@ -11,7 +11,7 @@ export const getIngredientsOfRestaurant =
   async (dispatch) => {
      try {
       const { data } = await api.get(
-        `/api/admin/ingredients/restaurant/${id}`,
+        `/api/admin/ingredient/restaurant/${id}`,
         {
           headers: {
             Authorization: `Bearer ${jwt}`,
@@ -45,7 +45,7 @@ export const createIngredients =
 
     try {
       const response = await api.post(
-        `/api/admin/ingredients`,
+        `/api/admin/ingredient`,
         data,
         {
           headers: {
@@ -88,7 +88,7 @@ export const createIngredientCategory =
 
     try {
       const response = await api.post(
-        "/api/admin/ingredients/category",
+        "/api/admin/ingredient/category",
         data,
         {
           headers: {
@@ -132,7 +132,7 @@ export const getIngredientCategory =
   async (dispatch) => {
     try {
       const response = await api.get(
-        `/api/admin/ingredients/restaurant/${id}/category`,
+        `/api/admin/ingredient/restaurant/${id}/category`,
         {
           headers: {
             Authorization: `Bearer ${jwt}`,
@@ -171,7 +171,7 @@ export const updateStockOfIngredients =
   async (dispatch) => {
     try {
       const { data } = await api.put(
-        `/api/admin/ingredients/${id}/stock`,
+        `/api/admin/ingredient/${id}/stock`,
         {},
         {
           headers: {

@@ -38,11 +38,11 @@ module.exports = {
     }
   },
 
-  updateStoke: async (req, res) => {
+  updateStock: async (req, res) => {
     try {
       const { id } = req.params;
 
-      const item = await ingredientService.updateStoke(id);
+      const item = await ingredientService.updateStock(id);
 
       res.status(200).json(item);
     } catch (error) {
