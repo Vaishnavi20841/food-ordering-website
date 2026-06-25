@@ -13,9 +13,23 @@ const app = express();
 // =====================
 // CORS
 // =====================
+const allowedOrigins = [
+  "http://localhost:3000",
+  "https://food-ordering-website-gob3.vercel.app"
+];
+
 app.use(
   cors({
-    origin: "http://localhost:3000",
+    origin: function (origin, callback) {
+      // Allow requests with no origin (Postman, mobile apps)
+      if (!origin) return callback(null, true);
+
+      if (allowedOrigins.includes(origin)) {
+        callback(null, true);
+      } else {
+        callback(new Error("Not allowed by CORS"));
+      }
+    },
     credentials: true,
   })
 );
