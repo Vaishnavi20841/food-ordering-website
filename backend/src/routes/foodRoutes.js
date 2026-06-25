@@ -4,14 +4,16 @@ const router = express.Router();
 const foodController = require("../controllers/foodController");
 const authenticate = require("../middleware/authenticate");
 
+// ✅ FIX ADDED HERE
+router.get("/", (req, res) => {
+  res.json({ message: "Food API working 🚀" });
+});
+
 // CREATE FOOD
 router.post("/", authenticate, foodController.createItem);
 
 // GET FOODS BY RESTAURANT
-router.get(
-  "/restaurant/:restaurantId",
-  foodController.getMenuItemsByRestaurantId
-);
+router.get("/restaurant/:restaurantId", foodController.getMenuItemsByRestaurantId);
 
 // SEARCH FOOD
 router.get("/search", foodController.searchFood);
