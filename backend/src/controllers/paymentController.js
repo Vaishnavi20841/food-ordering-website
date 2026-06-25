@@ -1,4 +1,4 @@
-const getRazorpay = require("../config/razorpay");
+const getRazorpay = require("../Config/razorpay");
 
 const createPaymentOrder = async (req, res) => {
   try {
