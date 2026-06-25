@@ -1,4 +1,4 @@
-import * as actionTypes from "./ActionType";
+
 import { api } from "../../config/api";
 import {
   CREATE_RESTAURANT_REQUEST,
@@ -204,7 +204,7 @@ export const updateRestaurantStatus = ({ restaurantId, restaurantData,jwt}) => {
   dispatch({ type: DELETE_RESTAURANT_REQUEST });
 
   try {
-    const res = await api.delete(
+        await api.delete(
       `/api/admin/restaurants/${restaurantId}`,
       {
         headers: {

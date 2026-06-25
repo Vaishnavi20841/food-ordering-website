@@ -9,14 +9,14 @@ import "./Navbar.css";
 import Box from "@mui/material/Box";
 import { useNavigate } from "react-router-dom";
 import Person from "@mui/icons-material/Person";
-import { useSelector, useDispatch } from "react-redux";
-import { logout } from "../State/Authentication/Action";
+import { useSelector } from "react-redux";
+
 
 export const Navbar = () => {
   const auth = useSelector((store) => store.auth);
   const { cartItems } = useSelector((store) => store.cart);
 
-  const dispatch = useDispatch();
+  
   const navigate = useNavigate();
 
   // ✅ FIX 1: ADD STATE (IMPORTANT)
@@ -30,10 +30,7 @@ export const Navbar = () => {
     }
   };
 
-  const handleLogout = () => {
-    dispatch(logout());
-    navigate("/");
-  };
+  
 
   return (
     <Box className="px-5 sticky top-0 z-50 py-[.8rem] bg-[#e91e63] lg:px-20 flex justify-between">

@@ -1,6 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
 import { ProfileNavigation } from './ProfileNavigation';
-import  { useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import UserProfile from "./UserProfile";
 import Orders from "./Orders";
@@ -8,8 +7,12 @@ import Address from "./Address";
 import Events from "./Events";
 import Favorites from "./Favorites";
 
-    const Profile = () =>{
-        const [openSideBar,setOpenSide]= useState(false);
+    
+const Profile = () => {
+
+    const [openSideBar] = useState(false);
+
+    
         return (
             <div className='lg:flex justify-between'>
                 <div className='sticky h-[80vh] lg:w-[20%]'>

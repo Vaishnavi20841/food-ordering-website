@@ -27,11 +27,7 @@ const initialState = {
 };
 
 // 🔥 ensure unique favorites
-const uniqueById = (arr) => {
-  return Array.from(
-    new Map(arr.map((item) => [item._id, item])).values()
-  );
-};
+
 
 export const authReducer = (state = initialState, action) => {
   switch (action.type) {

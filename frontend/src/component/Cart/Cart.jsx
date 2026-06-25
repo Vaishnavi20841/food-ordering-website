@@ -11,9 +11,9 @@ import {
 import AddLocationAltIcon from "@mui/icons-material/AddLocationAlt";
 import ReceiptLongIcon from "@mui/icons-material/ReceiptLong";
 import LocalShippingIcon from "@mui/icons-material/LocalShipping";
-import CurrencyRupeeIcon from "@mui/icons-material/CurrencyRupee";
 
-// import { AddLocation } from "@mui/icons-material";
+
+
 import { Formik, Form, Field } from "formik";
 import { useDispatch, useSelector } from "react-redux";
 
@@ -24,14 +24,7 @@ import { API_URL } from "../config/api";
 
 import { findCart, clearCartAction } from "../State/Cart/Action";
 
-// =========================
-// RAZORPAY POPUP
-// =========================
-// const openRazorpay = (razorpayOrder) => {
-//   if (!window.Razorpay) {
-//     alert("Razorpay SDK not loaded");
-//     return;
-//   }
+
 
   const openRazorpay = (
   razorpayOrder,
