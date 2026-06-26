@@ -6,17 +6,17 @@ const Food = require("../models/food.model");
 exports.createItem = async (req, res) => {
   try {
     const food = new Food({
-      name: req.body.name,
-      description: req.body.description,
-      price: req.body.price,
-      foodCategory: req.body.foodCategory,
-      restaurant: req.body.restaurant,
-      images: req.body.images || [],
-      isVegetarian: req.body.isVegetarian,
-      isSeasonal: req.body.isSeasonal,
-      available: req.body.available ?? true,
-    });
-
+  name: req.body.name,
+  description: req.body.description,
+  price: req.body.price,
+  foodCategory: req.body.foodCategory,
+  restaurant: req.body.restaurant,
+  images: req.body.images || [],
+  ingredients: req.body.ingredients || [], // ADD THIS LINE
+  isVegetarian: req.body.isVegetarian,
+  isSeasonal: req.body.isSeasonal,
+  available: req.body.available ?? true,
+});
     const savedFood = await food.save();
     return res.status(201).json(savedFood);
 
