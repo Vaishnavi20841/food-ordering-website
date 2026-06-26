@@ -71,6 +71,8 @@ const foodRoutes = require("./routes/foodRoutes");
 const paymentRoutes = require("./routes/paymentRoutes");
 const orderRoutes = require("./routes/orderRoutes");
 const cartRoutes = require("./routes/cartRoutes");
+const adminIngredientRoutes = require("./routes/adminIngredientRoutes");
+const adminCategoryRoutes = require("./routes/adminCategoryRoutes");
 // =====================
 // ROUTES MOUNTING (IMPORTANT FIX)
 // =====================
@@ -97,6 +99,10 @@ app.use("/api/cart", cartRoutes);
 
 // PAYMENT
 app.use("/api/payment", paymentRoutes);
+
+app.use('/api/admin/ingredient', adminIngredientRoutes);
+
+app.use('/api/admin/category', adminCategoryRoutes);
 
 // =====================
 // SERVER START
