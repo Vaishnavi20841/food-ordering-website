@@ -10,7 +10,7 @@ exports.createItem = async (req, res) => {
   description: req.body.description,
   price: req.body.price,
   foodCategory: req.body.foodCategory,
-  restaurant: req.body.restaurant,
+  restaurant:req.body.restaurant || req.body.restaurantId,
   images: req.body.images || [],
   ingredients: req.body.ingredients || [], // ADD THIS LINE
   isVegetarian: req.body.isVegetarian,
